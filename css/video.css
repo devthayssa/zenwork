@@ -1,0 +1,54 @@
+body {
+    background-image: url(img/home-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center; /* Centraliza o título principal */
+    margin-top: 20px;   /* Ajusta a margem superior */
+    color: #fff; /* Exemplo de cor para o texto */
+}
+
+h2 {
+    text-align: center; /* Centraliza o subtítulo */
+    margin-top: 10px;   /* Ajusta a margem superior */
+    color: #fff; /* Exemplo de cor para o subtítulo */
+}
+
+.videos {
+    display: flex;
+    justify-content: center; /* Centraliza os vídeos horizontalmente */
+    gap: 20px; /* Espaçamento entre os vídeos */
+    margin-top: 20px; /* Espaçamento entre o h2 e os vídeos */
+    flex-wrap: wrap; /* Permite que os vídeos quebrem para a próxima linha em telas menores */
+}
+
+.video {
+    width: 300px; /* Largura dos vídeos */
+    height: 200px; /* Altura dos vídeos */
+    background-color: #000; /* Cor de fundo dos vídeos */
+    position: relative;
+    overflow: hidden;
+}
+
+.video iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .video {
+        width: 100%; /* Vídeo ocupa a largura total em telas menores */
+        height: auto;
+    }
+}

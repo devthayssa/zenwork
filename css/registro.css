@@ -1,0 +1,173 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    background-color: #2b2c30e0;
+    font-weight: 400;
+    line-height: 1.7;
+    color: hsl(0, 15%, 94%);
+    position: relative;
+    overflow-x: hidden;
+    background-image: url('img/home.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Cobrir toda a altura da tela */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.custom-container {
+    background-color: rgba(143, 142, 139, 0.635); /* Fundo semi-transparente com o fundo mais escuro */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%; /* Responsivo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center; /* Centralizar o texto no container */
+}
+
+h2 {
+    text-align: center;
+    color: #e7af17;
+}
+
+.form-group {
+    margin-bottom: 15px;
+
+/* Inputs semi-transparente com fundo escuro */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #eeebeb;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #080807;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.907); /* Inputs semi-transparente com fundo escuro */
+    color: #151414;
+}
+
+button[type="submit"] {
+    background-color: #e3d31b;
+    color: #2b2c30;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #dacd12;
+}
+
+.link-exibir {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.link-exibir a {
+    color: #e3d31b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-exibir a:hover {
+    text-decoration: underline;
+}
+
+/* Ajustes para a navegação */
+ul {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 2rem;
+    background-color: rgba(2, 2, 2, 0.039);
+    padding: 10px 0;
+    width: 100%;
+    justify-content: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #af2727;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+ul li a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #e3d31b;
+    border-bottom: 2px solid #dacd12;
+    transform: scaleY(2);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+ul li a:after {
+    content: "";
+    position: absolute;
+    top: 1.2px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0e9;
+    transform: scale(0);
+    opacity: 0;
+    transition: 0.3s;
+    z-index: -1;
+}
+
+ul li a:hover {
+    color: #262626;
+}
+
+ul li a:hover:before {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+ul li a:hover:after {
+    transform: scaleY(1);
+    opacity: 1;
+}
+.logo-container {
+    text-align: center;
+    margin-top: 20px; /* Espaçamento superior */
+    margin-bottom: 20px 
+}

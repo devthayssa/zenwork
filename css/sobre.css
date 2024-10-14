@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Altura total da viewport */
+}
+
+.container {
+    display: flex; /* Usado para alinhar o card e a imagem */
+    align-items: center; /* Alinha o card e a imagem ao centro verticalmente */
+    justify-content: space-between; /* Espaço entre o card e a imagem */
+    height: 100%; /* Altura do container */
+    padding: 20px; /* Adiciona um pouco de espaçamento nas laterais */
+}
+
+.card {
+    --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+    width: 350px; /* Largura do card */
+    height: 450px; /* Altura do card */
+    padding: 10px; /* Aumentado o padding para dar mais espaço interno */
+    border-radius: 1rem;
+    overflow: visible;
+    background: var(--background);
+    position: relative;
+    z-index: 1;
+    margin-right: 20px; /* Espaço entre o card e a imagem */
+}
+
+.card::after {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 10px;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.8);
+    filter: blur(25px);
+    background: var(--background);
+    transition: opacity 0.5s;
+}
+
+.card-info {
+    --color: #000000; /* Cor de fundo do card */
+    background: var(--color);
+    color: white; /* Mudado para branco */
+    display: flex;
+    flex-direction: column; /* Alinhamento vertical do texto */
+    justify-content: center; /* Centraliza verticalmente o texto */
+    align-items: center; /* Centraliza horizontalmente o texto */
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    border-radius: 0.7rem;
+}
+
+.card .title {
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.card .description {
+    text-align: center; /* Alinhamento do texto descritivo */
+    padding: 10px; /* Espaço entre o título e a descrição */
+}
+
+/* Hover Effects */
+.card:hover::after {
+    opacity: 0;
+}
+
+.card:hover .card-info {
+    color: #f7ba2b; /* Cor do texto em hover */
+    transition: color 1s;
+}
+
+/* Estilos para a imagem da empresa */
+.company-image {
+    width: 890px; /* Diminuindo a largura da imagem */
+    height: auto; /* Manter proporções */
+}

@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    background-color: #2b2c30;
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Alinha os elementos em coluna */
+    justify-content: flex-start; /* Alinha os elementos no topo */
+    align-items: center; /* Centraliza horizontalmente */
+    height: 100vh;
+    background-image: url('img/home.jpg'); /* Imagem de fundo, opcional */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    color: #e3d31b; /* Cor do título */
+    width: 100%; /* Largura total para ocupar o espaço disponível */
+}
+
+form {
+    background-color: rgba(43, 44, 48, 0.9); /* Fundo semi-transparente */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 20px; /* Espaçamento abaixo do formulário */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+select,
+input[type="datetime-local"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo escuro para inputs */
+    color: #fff;
+}
+
+input::placeholder {
+    color: #cccccc; /* Cor do placeholder */
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #e3d31b;
+    border: none;
+    border-radius: 5px;
+    color: #2b2c30;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #dacd12;
+}
+
+a {
+    display: block; /* Exibe o link como um bloco */
+    text-align: center; /* Centraliza o texto do link */
+    margin-top: 20px; /* Espaçamento acima do link */
+    color: #e3d31b; /* Cor do link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
